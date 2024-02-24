@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shaadi.css">
+    <script src="shaadi.js"></script>
+    <link rel = "icon" href = "s.png" type = "image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <title>Events</title>
+</head>
+<body style="margin:0%;">
+    <div id="div1" style="margin:0 auto; height: 45.7em;width: 100%; background-image: url(8.jpg);
+    background-size:100% 100%; border: 2px solid crimson;">
+    <img src="s.png" height="10%" width="6%" style="position: relative; top: 1%; left: 4%; opacity:0.9; z-index: 1;" alt="Avatar">
+<div class="nav"><ul>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#About us">About us</a></li>
+    <li><a href="#Our Service">Our Service</a></li>
+    <li><a href="#Contact us">Contact us</a></li>
+    </ul></div>
+    </div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-success btn-lg btn-sm" data-toggle="modal" data-target="#myModal"  style="position: absolute; top: 15%;">Shaadi Events</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Events</h4>
+        </div>
+        <div class="modal-body"> 
+            <h3 align="center">Shadi Events</h3><br><br>
+            <form align="center">
+                <label>Customer name:</label>
+                <input type="text" placeholder="Enter your name" id="a22"><br>
+                <label>Customer number:</label>
+                <input type="number" placeholder="Enter your number" id="a23"><br><br>
+                <label> Choose Events:</label>
+            <select id="a21">
+                <option value="">Select Event Type</option>
+                <option value="Engagement Ceremony" id="eng">Engagement Ceremony</option>
+                <option value="Mehendi Ceremony" id="m">Mehendi Ceremony</option>
+                <option value="Sangeet Ceremony" id="sn">Sangeet Ceremony</option>
+                <option value="Shagun Ceremony" id="sh">Shagun Ceremony</option>
+                <option value="Haldi Ceremony" id="hl">Haldi Ceremony</option>
+                <option value="Reception Ceremony" id="re">Reception Ceremony</option>
+            </select><br>
+            <label>Number of people:</label>
+            <input type="number" placeholder="Enter number of people" id="a25"><br>
+            <label>Date:</label>
+            <input type="datetime-local" id="a24"><br>
+                <button type="button" class="btn btn-info btn-sm" onclick="shaadi1()">Submit</button>
+                <button type="reset" class="reset btn-danger btn-sm" >Clear</button>
+                </form>
+                </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ 
+</div>
+<!-----------------------------------------------------------birthday---------------------------------------------------------->
+<div class="container">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-success btn-lg btn-sm" data-toggle="modal" data-target="#myModal1"  style="position: absolute; top: 15%; left:17%;">Party Events</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Events</h4>
+          </div>
+          <div class="modal-body"> 
+              <h3 align="center">Party Events</h3><br><br>
+              <form align="center">
+                  <label>Customer name:</label>
+                  <input type="text" placeholder="Enter your name" id="a11"><br>
+                  <label>Customer number:</label>
+                  <input type="number" placeholder="Enter your number" id="a13"><br><br>
+                  <label> Choose Events:</label>
+              <select id="a12">
+                  <option value="">Select Party Type</option>
+                  <option value="Birthday party">Birthday party</option>
+                  <option value="Surprise party">Surprise party</option>
+                  <option value="Dinner party">Dinner party</option>
+                  <option value="Cocktail party">Cocktail party</option>
+                  <option value="Retirement Party">Retirement Party</option>
+                  <option value="Christmas or NYE Party">Christmas or NYE Party</option>
+                  <option value="Festival-Themed Party">Festival-Themed Party</option>
+              </select><br>
+              <label>Number of people:</label>
+              <input type="number" placeholder="Enter number of people" id="a14"><br>
+              <label>Date & Time:</label>
+              <input type="datetime-local" id="a15"><br>
+                  <button type="button" class="btn btn-info btn-sm" onclick="shaadi()">Submit</button>
+                  <button type="reset" class="reset btn-danger btn-sm" >Clear</button>
+                  </form>
+                  </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+   
+  </div>
+  <!-------------------------------------------------------Bill Receipt------------------------------------------------------>
+  <div class="container">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-success btn-lg btn-sm" data-toggle="modal" data-target="#myModal2"  style="position: absolute; top: 15%; left:25%;">Event Bill receipt</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Events</h4>
+          </div>
+          <div class="modal-body"> 
+              <h3 align="center">Bill receipt</h3><br>
+              <table border=1 style="width: 100%; margin-left: auto;margin-right:auto;">
+                <tr >
+                <th width="4%" >Sr.No.</th>
+                <th width="10%" rowspan="2">Customer Name</th>
+                <th width="9%" rowspan="2">Contact no.</th>
+                <th width="11%" rowspan="2">Event Name</th>
+                <th width="8%" rowspan="2">Price Per Person(Rs.)</th>   
+                <th width="11%" rowspan="2">Booking Date & Time</th>
+                <th width="8%" rowspan="2">Number of People </th>
+                <th width="5%" rowspan="2">Amount</th>
+                <tr>
+                </tr>
+                <tr align="center" >
+                  <td>1</td>
+                  <td id="a1"></td>
+                  <td id="a2"></td>
+                  <td id="a3"></td>
+                  <td id="a7"></td>
+                  <td id="a4"></td>
+                  <td id="a5" id="num"></td>
+                  <td id="a6" ></td>
+                </tr>
+                <tr align="center">
+                  <td >2</td>
+                  <td id="b1"></td>
+                  <td id="b2"></td>
+                  <td id="b3"></td>
+                  <td id="b7"></td>
+                  <td id="b4"></td>
+                  <td id="b5" id="num1"></td>
+                  <td id="b6"></td>
+                </tr>
+              </table><br>
+              <button type="button" onclick="cal()">Cal</button>
+                <span style="position: absolute; right: 13%; bottom:0%;"><b>Total Amount:</b></span>
+                <div style="height: 9%; width: 10%; border:solid; position: absolute; right:2%;bottom: 0%;" id="amount"></div>
+              </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+   
+  </div>
+
+   <!-------------------------------------------------------Total profit------------------------------------------------------>
+   <div class="container">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-success btn-lg btn-sm" data-toggle="modal" data-target="#myModal3"  style="position: absolute; top: 15%; left:35%;">Events Total profit</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal3" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Events</h4>
+          </div>
+          <div class="modal-body"> 
+              <h3 align="center">Total profit </h3><br>
+              <table border=1 style="width: 100%; margin-left: auto;margin-right:auto;">
+                <tr>
+                <th width="4%" >Sr.No.</th>
+                <th width="10%" rowspan="2">Customer Name</th>
+                <th width="9%" rowspan="2">Contact no.</th>
+                <th width="11%" rowspan="2">Event Name</th> 
+                <th width="11%" rowspan="2">Booking Date & Time</th>
+                <th width="5%" rowspan="2">Amount</th></tr>
+                <tr>
+                </tr>
+                <tr align="center">
+                  <td>1</td>
+                  <td id="aa1"></td>
+                  <td id="aa2"></td>
+                  <td id="aa3"></td>
+                  <td id="aa4"></td>
+                  <td id="aa6"></td>
+                </tr>
+                <tr align="center">
+                  <td>2</td>
+                  <td id="bb1"></td>
+                  <td id="bb2"></td>
+                  <td id="bb3"></td>
+                  <td id="bb4"></td>
+                  <td id="bb6"></td>
+                </tr>
+              </table><br>
+              <button type="button" onclick="cal1()">Cal</button><span style="position: absolute; right: 13%; bottom:0%;"><b>Total Amount:</b></span>
+              <div style="height: 9%; width: 10%; border:solid; position: absolute; right:2%;bottom: 0%;" id="amount1"></div>
+                <span style="position: absolute; right: 55%; bottom:0%;"><b>Total Profit:</b></span>
+                <div style="height: 9%; width: 10%; border:solid; position: absolute; right:44%;bottom: 0%;" id="profit"></div>
+            
+                  </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+   
+  </div> 
+</body>
+</html>
